@@ -14,15 +14,6 @@ OTP = {}
 MAIL_USERNAME = os.getenv('MAIL_USERNAME')
 MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
 
-pythonCopyimport os
-import random
-import time
-from flask import request, jsonify
-from flask_mail import Message
-from werkzeug.security import generate_password_hash
-from models import User
-from app import db, mail
-
 OTP = {}
 
 # Get email configuration from environment variables
